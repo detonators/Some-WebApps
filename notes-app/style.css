@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #7bdaf3;
+    background-color: #7bdaf3;                /*Background colour */
     display: flex;
     flex-wrap: wrap;
     font-family: "Poppins", sans-serif;
@@ -17,7 +17,7 @@ body {
     background-color: #9ec862;
     border-radius: 3px;
     border: none;
-    color: white;
+    color: white;                   /* set header colour and pointer colour*/
     cursor: pointer;
     padding: 0.5rem 1rem;
     position: fixed;
@@ -27,7 +27,7 @@ body {
 
 .note {
     background-color: #fff;
-    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);  /* background colour*/
     margin: 20px;
     height: 400px;
     width: 400px;
@@ -35,7 +35,7 @@ body {
 
 .note .tools {
     background-color: #9ec862;
-    display: flex;
+    display: flex;                                  /*given the tools a colour*/
     justify-content: flex-end;
     padding: 0.5rem;
 }
@@ -43,7 +43,7 @@ body {
 .note .tools button {
     background-color: transparent;
     border: none;
-    color: #fff;
+    color: #fff;                    /*tool bottons*/
     cursor: pointer;
     font-size: 1rem;
     margin-left: 0.5rem;
@@ -51,7 +51,7 @@ body {
 
 .note .main {
     background-color: #eee;
-    overflow: hidden;
+    overflow: hidden;                 /*colour*/
     height: 400px;
     width: 100%;
 }
@@ -59,7 +59,7 @@ body {
 .note textarea {
     outline: none;
     font-family: inherit;
-    font-size: 1.2rem;
+    font-size: 1.2rem;                  /* Text area*/
     border: none;
     height: 400px;
     width: 100%;

@@ -7,10 +7,10 @@ const numberEl = document.getElementById("number");
 const symbolEl = document.getElementById("symbol");
 const generateEl = document.getElementById("generate");
 
-const upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const lowerLetters = "abcdefghijklmnopqrstuvwxyz";
-const numbers = "0123456789";
-const symbols = "!@#$%^&*()_+=";
+const upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";           // pre sets
+const lowerLetters = "abcdefghijklmnopqrstuvwxyz";          // pre sets
+const numbers = "0123456789";                            // pre sets
+const symbols = "!@#$%^&*()_+=";                          // pre sets
 
 function getLowercase() {
     return lowerLetters[Math.floor(Math.random() * lowerLetters.length)];
@@ -25,7 +25,7 @@ function getNumber() {
 }
 
 function getSymbol() {
-    return symbols[Math.floor(Math.random() * symbols.length)];
+    return symbols[Math.floor(Math.random() * symbols.length)];                 //math 
 }
 
 function generatePassword() {
@@ -34,7 +34,7 @@ function generatePassword() {
     let password = "";
 
     if (upperEl.checked) {
-        password += getUppercase();
+        password += getUppercase();                          //randomizer
     }
 
     if (lowerEl.checked) {
@@ -49,7 +49,7 @@ function generatePassword() {
         password += getSymbol();
     }
 
-    for (let i = password.length; i < len; i++) {
+    for (let i = password.length; i < len; i++) {                //randomizer
         const x = generateX();
         password += x;
     }

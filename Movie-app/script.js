@@ -6,9 +6,9 @@ const SEARCHAPI =
 
 const main = document.getElementById("main");
 const form = document.getElementById("form");
-const search = document.getElementById("search");
+const search = document.getElementById("search");          // Api used to get movie....
 
-// initially get fav movies
+                                    // initially get fav movies
 getMovies(APIURL);
 
 async function getMovies(url) {
@@ -21,7 +21,7 @@ async function getMovies(url) {
 }
 
 function showMovies(movies) {
-    // clear main
+                                                                 // clear main
     main.innerHTML = "";
 
     movies.forEach((movie) => {
@@ -32,9 +32,9 @@ function showMovies(movies) {
 
         movieEl.innerHTML = `
             <img
-                src="${IMGPATH + poster_path}"
+                src="${IMGPATH + poster_path}"                    
                 alt="${title}"
-            />
+            />                                 
             <div class="movie-info">
                 <h3>${title}</h3>
                 <span class="${getClassByRate(
@@ -45,7 +45,7 @@ function showMovies(movies) {
                 <h3>Overview:</h3>
                 ${overview}
             </div>
-        `;
+        `;                               // title and banner
 
         main.appendChild(movieEl);
     });
@@ -59,9 +59,9 @@ function getClassByRate(vote) {
     } else {
         return "red";
     }
-}
+}                                                   // search integeration                    
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", (e) => {        
     e.preventDefault();
 
     const searchTerm = search.value;

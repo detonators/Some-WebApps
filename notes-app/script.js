@@ -1,6 +1,6 @@
 const addBtn = document.getElementById("add");
 
-const notes = JSON.parse(localStorage.getItem("notes"));
+const notes = JSON.parse(localStorage.getItem("notes"));             // intro to keep the data in local storage
 
 if (notes) {
     notes.forEach((note) => {
@@ -8,7 +8,7 @@ if (notes) {
     });
 }
 
-addBtn.addEventListener("click", () => {
+addBtn.addEventListener("click", () => {                   // click opration
     addNewNote();
 });
 
@@ -27,8 +27,8 @@ function addNewNote(text = "") {
         </div>
     `;
 
-    const editBtn = note.querySelector(".edit");
-    const deleteBtn = note.querySelector(".delete");
+    const editBtn = note.querySelector(".edit");                      //for editing
+    const deleteBtn = note.querySelector(".delete");                      //to delete 
 
     const main = note.querySelector(".main");
     const textArea = note.querySelector("textarea");
@@ -36,7 +36,7 @@ function addNewNote(text = "") {
     textArea.value = text;
     main.innerHTML = marked(text);
 
-    editBtn.addEventListener("click", () => {
+    editBtn.addEventListener("click", () => {                            // now some more click options
         main.classList.toggle("hidden");
         textArea.classList.toggle("hidden");
     });

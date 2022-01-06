@@ -8,7 +8,7 @@ body {
     background: #ece9e6;
     background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
     background: linear-gradient(to right, #ffffff, #ece9e6);
-    display: flex;
+    display: flex;                                  /*colour of the body...... */
     align-items: center;
     justify-content: center;
     font-family: "Poppins", sans-serif;
@@ -22,7 +22,7 @@ img {
 
 .mobile-container {
     background-color: #fff;
-    box-shadow: 0 0 10px 2px #3333331a;
+    box-shadow: 0 0 10px 2px #3333331a;     /* Container portion*/
     border-radius: 3px;
     overflow: hidden;
     width: 400px;
@@ -31,14 +31,14 @@ img {
 header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;     /*header portion */
     padding: 1rem;
 }
 
 header input {
     background-color: #eee;
     border: none;
-    border-radius: 3px;
+    border-radius: 3px;                  /*to take input */
     font-family: inherit;
     padding: 0.5rem 1rem;
 }
@@ -46,7 +46,7 @@ header input {
 header button {
     background-color: transparent;
     border: none;
-    color: rgb(138, 129, 141);
+    color: rgb(138, 129, 141);       /*  header colour and size */
     font-size: 1.5rem;
     margin-left: 10px;
 }
@@ -60,7 +60,8 @@ header button {
 .fav-meals {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center;             /*  Inner part section */
+
     list-style-type: none;
     padding: 0;
 }
@@ -76,7 +77,7 @@ header button {
     background-color: transparent;
     border: none;
     cursor: pointer;
-    opacity: 0;
+    opacity: 0;                              /* List formate  */
     position: absolute;
     top: -0.5rem;
     right: -0.5rem;
@@ -110,7 +111,7 @@ header button {
     box-shadow: 0 0 10px 2px #3333331a;
     cursor: pointer;
     margin: 1.5rem;
-    overflow: hidden;
+    overflow: hidden;                                            /* Meal portion  */
 }
 
 .meal-header {
@@ -141,7 +142,7 @@ header button {
 
 .meal-body h4 {
     margin: 0;
-}
+}                                                    /* Inner body  */
 
 .meal-body .fav-btn {
     border: none;
@@ -164,7 +165,7 @@ header button {
     left: 0;
     right: 0;
     top: 0;
-    bottom: 0;
+    bottom: 0;                   /* popup formate setting  */
 }
 
 .popup-container.hidden {

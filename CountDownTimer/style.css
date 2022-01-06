@@ -5,11 +5,11 @@
 }
 
 body {
-    background-image: url("./snow.jpg");
+    background-image: url("./snow.jpg");             /* image of bg*/
     background-size: cover;
     background-position: center center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;                            /*position of image */
     align-items: center;
     min-height: 100vh;
     font-family: "Poppins", sans-serif;
@@ -18,7 +18,7 @@ body {
 
 h1 {
     font-weight: normal;
-    font-size: 4rem;
+    font-size: 4rem;                             /* header font*/
     margin-top: 5rem;
 }
 
@@ -34,7 +34,7 @@ h1 {
     line-height: 1;
     margin: 1rem 2rem;
 }
-
+                                                /*text font and size defined */
 .countdown-el {
     text-align: center;
 }

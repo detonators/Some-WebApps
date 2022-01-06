@@ -1,6 +1,6 @@
 const form = document.getElementById("form");
 const input = document.getElementById("input");
-const todosUL = document.getElementById("todos");
+const todosUL = document.getElementById("todos");                   //starting the js 
 
 const todos = JSON.parse(localStorage.getItem("todos"));
 
@@ -10,7 +10,7 @@ if (todos) {
     });
 }
 
-form.addEventListener("submit", (e) => {
+form.addEventListener("submit", (e) => {     //submit option will be visible
     e.preventDefault();
 
     addTodo();
@@ -32,7 +32,7 @@ function addTodo(todo) {
         todoEl.innerText = todoText;
 
         todoEl.addEventListener("click", () => {
-            todoEl.classList.toggle("completed");
+            todoEl.classList.toggle("completed");                 //Setting right and left clicking responses
 
             updateLS();
         });
@@ -52,7 +52,7 @@ function addTodo(todo) {
         updateLS();
     }
 }
-
+                                                                  //to save the todo list....
 function updateLS() {
     const todosEl = document.querySelectorAll("li");
 

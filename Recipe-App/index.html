@@ -9,24 +9,24 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         />
         <link rel="stylesheet" href="style.css" />
-        <script src="script.js" defer></script>
+        <script src="script.js" defer></script>         <!--Integrating js file -->
     </head>
     <body>
-        <div class="mobile-container">
+        <div class="mobile-container">                  <!-- made a new class-->
             <header>
                 <input type="text" id="search-term" />
                 <button id="search"><i class="fas fa-search"></i></button>
             </header>
             <div class="fav-container">
                 <h3>Favorite Meals</h3>
-                <ul class="fav-meals" id="fav-meals"></ul>
+                <ul class="fav-meals" id="fav-meals"></ul>    <!--making container -->
             </div>
             <div class="meals" id="meals"></div>
         </div>
 
         <div class="popup-container hidden" id="meal-popup">
             <div class="popup">
-                <button id="close-popup" class="close-popup">
+                <button id="close-popup" class="close-popup">      <!--popup -->
                     <i class="fas fa-times"></i>
                 </button>
                 <div class="meal-info" id="meal-info"></div>

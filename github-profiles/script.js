@@ -1,10 +1,10 @@
-const APIURL = "https://api.github.com/users/";
+const APIURL = "https://api.github.com/users/";             // github api used to get data 
 
 const main = document.getElementById("main");
 const form = document.getElementById("form");
 const search = document.getElementById("search");
 
-getUser("detonators");
+getUser("detonators");                             // mention the user github
 
 async function getUser(username) {
     const resp = await fetch(APIURL + username);
@@ -16,7 +16,7 @@ async function getUser(username) {
 }
 
 async function getRepos(username) {
-    const resp = await fetch(APIURL + username + "/repos");
+    const resp = await fetch(APIURL + username + "/repos");               //to  get info to i'd...
     const respData = await resp.json();
 
     addReposToCard(respData);
@@ -45,7 +45,7 @@ function createUserCard(user) {
 
     main.innerHTML = cardHTML;
 }
-
+                                                                        // card formate setup....
 function addReposToCard(repos) {
     const reposEl = document.getElementById("repos");
 
@@ -60,7 +60,7 @@ function addReposToCard(repos) {
             repoEl.target = "_blank";
             repoEl.innerText = repo.name;
 
-            reposEl.appendChild(repoEl);
+            reposEl.appendChild(repoEl);                        // to show the github info....
         });
 }
 
